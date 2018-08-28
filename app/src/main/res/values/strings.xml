@@ -1,3 +1,19 @@
 <resources>
     <string name="app_name">PetanuxAndroid</string>
+    <string name="EmailHint">Email</string>
+    <string name="passwordHint">Password</string>
+    <string name="ReenterEmailHint">Re-enter Email</string>
+    <string name="ReenterPasswordHint">Re-enter Password</string>
+    <string name="NameHint">Name</string>
+    <string name="FamilyHint">Family</string>
+    <string name="acceptTermsAndConditions">I have read and accept \n
+        <u>terms and conditions of use.</u></string>
+    <string name="RPasswordHint">Re-enter Password</string>
+    <string name="SubmitButton">Submit</string>
+    <string name="txtActivationCodeHint">Click the link sent to your email or enter the recieved code to continue</string>
+    <string name="txtDidNotRcvCode">Did not recieved activation code yet? \n
+        Click <u>here.</u></string>
+    <string name="etActivationCodeHint">Code</string>
+    <string name="AppName">PETANUX</string>
+    <string name="txtWelcome">Never miss any offer !</string>
 </resources>
