@@ -6,6 +6,20 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textViewStyle">@style/BalsamiqTextViewStyle</item>
+        <item name="android:buttonStyle">@style/BalsamiqButtonStyle</item>
+        <item name="android:editTextStyle">@style/BalsamiqEditTextStyle</item>
     </style>
+
+    <style name="BalsamiqTextViewStyle" parent="android:Widget.TextView">
+        <item name="android:fontFamily">BalsamiqSansRegular</item>
+    </style>
+
+    <style name="BalsamiqButtonStyle" parent="android:Widget.Button">
+        <item name="android:fontFamily">BalsamiqSansRegular</item>
+    </style>
+
+    <style name="BalsamiqEditTextStyle" parent="android:Widget.EditText">
+        <item name="android:fontFamily">BalsamiqSansRegular</item> </style>
 
 </resources>

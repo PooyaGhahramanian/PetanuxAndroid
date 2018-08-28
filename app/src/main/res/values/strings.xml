@@ -16,4 +16,6 @@
     <string name="etActivationCodeHint">Code</string>
     <string name="AppName">PETANUX</string>
     <string name="txtWelcome">Never miss any offer !</string>
+    <string name="FirstRunCaption">Which products are you interested in?</string>
+    <string name="btnContinue">Continue</string>
 </resources>
