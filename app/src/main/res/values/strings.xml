@@ -6,6 +6,13 @@
     <string name="ReenterPasswordHint">Re-enter Password</string>
     <string name="NameHint">Name</string>
     <string name="FamilyHint">Family</string>
+    <string name="PhoneHint">Phone Number</string>
+    <string name="AddressHint">Address</string>
+    <string name="GenderHint">Gender</string>
+    <string name="OldPassword">OldPassword</string>
+    <string name="NewPassword">New Password</string>
+    <string name="RepeatNewPassword">Repeat New Password</string>
+    <string name="AgeHint">Age</string>
     <string name="acceptTermsAndConditions">I have read and accept \n
         <u>terms and conditions of use.</u></string>
     <string name="RPasswordHint">Re-enter Password</string>
@@ -15,7 +22,32 @@
         Click <u>here.</u></string>
     <string name="etActivationCodeHint">Code</string>
     <string name="AppName">PETANUX</string>
-    <string name="txtWelcome">Never miss any offer !</string>
+    <string name="txtWelcome">Never ever miss any offer !</string>
     <string name="FirstRunCaption">Which products are you interested in?</string>
     <string name="btnContinue">Continue</string>
+    <string name="edit_profile"><u>Edit Profile</u></string>
+    <string name="change_password"><u>Change Password</u></string>
+    <string name="logout"><u>Logout</u></string>
+    <string name="followed_stores">Followed Stores</string>
+    <string name="followed_categories">Followed Categories</string>
+    <string name="save_changes">Save Changes</string>
+    <string name="categories">Categories (0)</string>
+    <string name="search">Search...</string>
+    <string name="stores">Stores</string>
+    <string name="category">Category</string>
+    <string name="items">Items</string>
+    <string name="special">Special</string>
+    <string name="distance">Distance</string>
+    <string name="child_care">Child Care</string>
+    <string name="laptop">Laptop</string>
+    <string name="Mobile">Mobile</string>
+    <string name="camera">Camera</string>
+    <string name="store_comment_1">One of the best stores in this area. "Hamid" - 2018-2-16</string>
+    <string name="store_comment_2">Heavy traffic in this area. "John" - 2018-08-26</string>
+    <string name="item_comment_1">I have it for more than 2 years and still working without any problem. "Reza" - 2018-6-17</string>
+    <string name="item_comment_2">Except the battery that lasts only for 3 hours, everything else is perfect. "Sara" - 2018-07-22</string>
+    <string name="show_offers">Offers from this store</string>
+    <string name="available_categories">Available Categories (4) </string>
+    <string name="discover_hint">Discover stores, categories, items, and special offers by selecting from top menu.</string>
+    <string name="TermsAndConditions"><u>Terms and Conditions of Use.</u></string>
 </resources>

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MapActivity"
+    android:background="@drawable/background">
+
+
+    <TableRow>
+
+        <android.support.constraint.ConstraintLayout>
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/txt_followed_stores"
+                android:layout_width="117dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:textColor="@android:color/holo_orange_light"
+                android:textSize="12sp"
+                app:fontFamily="@font/autour_one"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="@string/categories" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:background="@android:color/white"
+                app:layout_constraintBottom_toBottomOf="@+id/txt_followed_stores"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+        </android.support.constraint.ConstraintLayout>
+    </TableRow>
+    <TableRow>
+
+        <android.support.constraint.ConstraintLayout>
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/txt_followed_categories"
+                android:layout_width="151dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:textColor="@android:color/holo_orange_light"
+                android:textSize="12sp"
+                app:fontFamily="@font/autour_one"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="@string/distance" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:background="@android:color/white"
+                app:layout_constraintBottom_toBottomOf="@+id/txt_followed_categories"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+        </android.support.constraint.ConstraintLayout>
+    </TableRow>
+
+    <TableRow>
+
+        <android.support.constraint.ConstraintLayout android:layout_height="400dp">
+
+            <ImageButton
+                android:id="@+id/imgbtnHome"
+                android:layout_width="58dp"
+                android:layout_height="55dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginStart="28dp"
+                android:background="@null"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:srcCompat="@drawable/home_white" />
+
+            <ImageButton
+                android:id="@+id/imgbtnSearch"
+                android:layout_width="58dp"
+                android:layout_height="55dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginStart="16dp"
+                android:background="@null"
+                android:scaleType="fitCenter"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/imgbtnMap"
+                app:srcCompat="@drawable/search_white" />
+
+            <ImageButton
+                android:id="@+id/imgbtnMap"
+                android:layout_width="58dp"
+                android:layout_height="55dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginStart="16dp"
+                android:background="@null"
+                android:scaleType="fitCenter"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/imgbtnHome"
+                app:srcCompat="@drawable/map_blue" />
+
+            <ImageButton
+                android:id="@+id/imgbtnProfile"
+                android:layout_width="58dp"
+                android:layout_height="55dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:background="@null"
+                android:scaleType="fitCenter"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toEndOf="@+id/imgbtnSearch"
+                app:srcCompat="@drawable/profile_white" />
+
+            <com.google.android.gms.maps.MapView
+                android:id="@+id/mapView"
+                android:layout_width="281dp"
+                android:layout_height="305dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </android.support.constraint.ConstraintLayout>
+    </TableRow>
+
+</TableLayout>

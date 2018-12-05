@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileActivity"
+    android:background="@drawable/background">
+
+    <TableRow android:layout_width="match_parent">
+
+        <android.support.constraint.ConstraintLayout android:layout_width="match_parent">
+
+            <android.support.v4.widget.CircleImageView
+                android:id="@+id/circleImageView"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="16dp"
+                android:src="@drawable/profile_picture"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/txt_profile_name"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="8dp"
+                android:textColor="@android:color/white"
+                android:textSize="10sp"
+                app:fontFamily="@font/convergence"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/circleImageView"
+                tools:text="Pouya Ghahramanian" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/txt_edit_profile"
+                android:layout_width="71dp"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:textSize="10sp"
+                app:fontFamily="@font/autour_one"
+                tools:layout_editor_absoluteX="164dp"
+                tools:layout_editor_absoluteY="30dp"
+                tools:text="@string/edit_profile" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/txt_change_password"
+                android:layout_width="115dp"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:textSize="10sp"
+                app:fontFamily="@font/autour_one"
+                tools:layout_editor_absoluteX="164dp"
+                tools:layout_editor_absoluteY="52dp"
+                tools:text="@string/change_password" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/txt_logout"
+                android:layout_width="43dp"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:textSize="10sp"
+                app:fontFamily="@font/autour_one"
+                tools:layout_editor_absoluteX="246dp"
+                tools:layout_editor_absoluteY="30dp"
+                tools:text="@string/logout" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:background="@android:color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:layout_editor_absoluteY="94dp" />
+
+        </android.support.constraint.ConstraintLayout>
+
+    </TableRow>
+
+    <TableRow>
+
+        <android.support.constraint.ConstraintLayout>
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/txt_followed_stores"
+                android:layout_width="117dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:textColor="@android:color/holo_orange_light"
+                android:textSize="12sp"
+                app:fontFamily="@font/autour_one"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="@string/followed_stores" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:background="@android:color/white"
+                app:layout_constraintBottom_toBottomOf="@+id/txt_followed_stores"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+        </android.support.constraint.ConstraintLayout>
+    </TableRow>
+    <TableRow>
+
+        <android.support.constraint.ConstraintLayout>
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/txt_followed_categories"
+                android:layout_width="151dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:textColor="@android:color/holo_orange_light"
+                android:textSize="12sp"
+                app:fontFamily="@font/autour_one"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="@string/followed_categories" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:background="@android:color/white"
+                app:layout_constraintBottom_toBottomOf="@+id/txt_followed_categories"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+        </android.support.constraint.ConstraintLayout>
+    </TableRow>
+
+    <TableRow>
+
+        <android.support.constraint.ConstraintLayout android:layout_height="311dp">
+
+            <ImageButton
+                android:id="@+id/imgbtnHome"
+                android:layout_width="58dp"
+                android:layout_height="55dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginStart="28dp"
+                android:background="@null"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:srcCompat="@drawable/home_white" />
+
+            <ImageButton
+                android:id="@+id/imgbtnSearch"
+                android:layout_width="58dp"
+                android:layout_height="55dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginStart="16dp"
+                android:background="@null"
+                android:scaleType="fitCenter"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/imgbtnMap"
+                app:srcCompat="@drawable/search_white" />
+
+            <ImageButton
+                android:id="@+id/imgbtnMap"
+                android:layout_width="58dp"
+                android:layout_height="55dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginStart="16dp"
+                android:background="@null"
+                android:scaleType="fitCenter"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/imgbtnHome"
+                app:srcCompat="@drawable/map_white" />
+
+            <ImageButton
+                android:id="@+id/imgbtnProfile"
+                android:layout_width="58dp"
+                android:layout_height="55dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:background="@null"
+                android:scaleType="fitCenter"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toEndOf="@+id/imgbtnSearch"
+                app:srcCompat="@drawable/profile_blue" />
+        </android.support.constraint.ConstraintLayout>
+    </TableRow>
+
+</TableLayout>
